@@ -10,7 +10,7 @@ with node.js using [sharp](https://github.com/lovell/sharp) for image decoding.
 You'll need to install `sharp` alongside `smartcrop-sharp`.
 
 ```
-npm install --save smartcrop-sharp sharp
+npm install smartcrop-sharp@github:suhwr/smartcrop-sharp
 ```
 
 ## API
@@ -47,27 +47,3 @@ applySmartCrop('flower.jpg', 'flower-square.jpg', 128, 128);
 ## Face Detection Example
 
 Check out [smartcrop-cli](https://github.com/jwagner/smartcrop-cli/) for a more advanced [example](https://github.com/jwagner/smartcrop-cli/blob/master/smartcrop-cli.js#L100) of how to use smartcrop from node including face detection with opencv.
-
-## Changelog
-
-### 2.0.8
-- Update peerDependency to sharp 0.32
-
-### 2.0.7
-- Update peerDependency to sharp 0.31
-
-### 2.0.6
-- Update peerDependency to sharp 0.30
-
-### 2.0.5
-- Update peerDependency to sharp 0.29
-
-### 2.0.4
-- Updated all dependencies
-- Added typescript definitions (with help from @nicholaschiang)
-
-### 2.0.2
-
-- **sharp is now a peer dependency you will need to install it via `npm install sharp` when updating**
-- In short: It's a lot faster, especially when calculating bigger crops.
-- The quality of the crops should be comparable but the exact results are going to be different.
